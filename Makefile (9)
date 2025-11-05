@@ -1,0 +1,52 @@
+
+#**************************************************************
+#		 Pontificia Universidad Javeriana
+#
+# Autores: - Danna Gabriela Rojas Bernal 
+# Fecha: 30 Octubre de 2025 
+# Docente: J. Corredor 
+#
+# Makefile para compilar el programa con hilos POSIX y mutex
+#**************************************************************
+
+
+
+GCC = gcc #define compilador
+FLAGS =
+MODULO =
+
+# Lista con los nombres de todos los programas que se compilarán.
+# Cada uno corresponde a un archivo fuente .c con el mismo nombre.
+PROGRAMAS = hilos_pthreads01Rojas hilos_pthreads02Rojas hilos_pthreads03Rojas hilos_pthreads04Rojas hilos_pthreads05Rojas hilos_pthreads06Rojas hilos_pthreads07Rojas hilos_pthreads08Rojas
+
+# Cada regla toma el nombre del programa ($@) y compila el archivo .c
+# correspondiente, generando un ejecutable con el mismo nombre.
+# Ejemplo: compila "hilos_pthreads01Rojas.c" y genera "hilos_pthreads01Rojas"
+
+hilos_pthreads01Rojas:
+	$(GCC) $@.c -o $@
+
+hilos_pthreads02Rojas:
+	$(GCC) $@.c -o $@
+
+hilos_pthreads03Rojas:
+	$(GCC) $@.c -o $@
+
+hilos_pthreads04Rojas:
+	$(GCC) $@.c -o $@
+
+hilos_pthreads05Rojas:
+	$(GCC) $@.c -o $@
+
+hilos_pthreads06Rojas:
+	$(GCC) $@.c -o $@
+
+hilos_pthreads07Rojas:
+	$(GCC) $@.c -o $@
+
+hilos_pthreads08Rojas:
+	$(GCC) $@.c -o $@
+
+# "make clean" elimina los ejecutables listados en $(PROGRAMAS)
+clean:
+	$(RM) $(PROGRAMAS)
